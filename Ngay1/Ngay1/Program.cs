@@ -156,6 +156,20 @@ namespace Ngay1
             //r.Acceptdetails();
             //r.Display();
         }
+        static void VD11()
+        {
+            Console.WriteLine("Gọi phương thức trong C#");
+            Console.WriteLine("-------------------------");
+
+            int a = 100;
+            int b = 200;
+            int ret;
+            TestCsharp n = new TestCsharp();
+
+            //gọi phương thức Findmax
+            ret = n.FindMax(a, b);
+            Console.WriteLine("Giá trị lớn nhất là:{0}", ret);
+        }
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
@@ -168,7 +182,8 @@ namespace Ngay1
             //VD7();
             //VD8();
             //VD9();
-            VD10();
+            //VD10();
+            VD11();
 
 
             Console.ReadLine();
