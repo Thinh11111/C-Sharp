@@ -1,0 +1,7 @@
+E:\Hoc Dai Hoc\Lap Trinh Tren Moi Truong Windows\Ngay1\Ngay1\bin\Debug\Ngay1.exe.config
+E:\Hoc Dai Hoc\Lap Trinh Tren Moi Truong Windows\Ngay1\Ngay1\bin\Debug\Ngay1.exe
+E:\Hoc Dai Hoc\Lap Trinh Tren Moi Truong Windows\Ngay1\Ngay1\bin\Debug\Ngay1.pdb
+E:\Hoc Dai Hoc\Lap Trinh Tren Moi Truong Windows\Ngay1\Ngay1\obj\Debug\Ngay1.csprojAssemblyReference.cache
+E:\Hoc Dai Hoc\Lap Trinh Tren Moi Truong Windows\Ngay1\Ngay1\obj\Debug\Ngay1.csproj.CoreCompileInputs.cache
+E:\Hoc Dai Hoc\Lap Trinh Tren Moi Truong Windows\Ngay1\Ngay1\obj\Debug\Ngay1.exe
+E:\Hoc Dai Hoc\Lap Trinh Tren Moi Truong Windows\Ngay1\Ngay1\obj\Debug\Ngay1.pdb
