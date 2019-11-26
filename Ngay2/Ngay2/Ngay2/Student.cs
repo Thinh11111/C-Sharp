@@ -53,6 +53,17 @@ namespace Ngay2
             get { return DiemTB; }
             set { DiemTB = value; }
         }
+        public void Nhap1SV()
+        {
+            Console.WriteLine("Nhập MaSV");
+            SID = int.Parse(Console.ReadLine());
+            Console.WriteLine("Nhập tên sinh viên");
+            Name = Console.ReadLine();
+            Console.WriteLine("Nhâp Khoa");
+            Faculty = Console.ReadLine();
+            Console.WriteLine("Nhập điểm trung bình");
+            Mark = float.Parse(Console.ReadLine());
+        }
         public void Show()
         {
             Console.WriteLine("MSVV:{0}", this.SID);

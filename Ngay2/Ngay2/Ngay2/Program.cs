@@ -36,11 +36,45 @@ namespace Ngay2
                 sv.Show();
             }
         }
+        static void NhapDS(int n)
+        {
+            Student[] DSSV;            
+            DSSV = new Student[n];
+            Console.WriteLine("--------NHẬP DANH SÁCH SINH VIÊN---------");
+            for (int i = 0; i < n; i++)
+            {
+                DSSV[i] = new Student();
+                DSSV[i].Nhap1SV();
+            }
+        }
+        static void XuatDS(int n)
+        {
+            Student[] DSSV;
+            DSSV = new Student[n];
+            Console.WriteLine("--------DANH SÁCH SINH VIÊN---------");
+            for (int i = 0; i < n; i++)
+            {
+                Console.WriteLine("Sinh Viên Thứ: {0}", i + 1);
+                DSSV[i] = new Student();
+                DSSV[i].Show();
+            }
+
+        }
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
 
-            VD1();
+            //VD1();
+
+            /*Student sv = new Student();
+            sv.Nhap1SV();
+            sv.Show();*/
+
+            int n;
+            Console.WriteLine("Nhập số lượng sinh viên:");
+            n = int.Parse(Console.ReadLine());
+            NhapDS(n);
+            XuatDS(n);
 
             Console.ReadLine();
         }
