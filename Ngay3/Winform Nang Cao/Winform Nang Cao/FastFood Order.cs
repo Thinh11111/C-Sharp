@@ -174,5 +174,11 @@ namespace Winform_Nang_Cao
             }
             
         }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            int rowindex = dataGridView1.CurrentCell.RowIndex;
+            dataGridView1.Rows.RemoveAt(rowindex);
+        }
     }
 }
