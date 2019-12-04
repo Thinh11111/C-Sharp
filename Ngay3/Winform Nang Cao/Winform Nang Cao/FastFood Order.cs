@@ -37,8 +37,8 @@ namespace Winform_Nang_Cao
             //r["FootName"] = btnPhoMaiBo.Text;
             //r["Quantity"] = 1;
             //dt.Rows.Add(r);
-            
-            
+
+
             dataGridView1.DataSource = dt;
 
         }
@@ -73,7 +73,7 @@ namespace Winform_Nang_Cao
                 dt.AcceptChanges();
                 dataGridView1.DataSource = dt;
             }
-            
+
         }
         private void BtnPhoMaiBo_Click(object sender, EventArgs e)
         {
@@ -149,10 +149,30 @@ namespace Winform_Nang_Cao
         }
         private void btnOrder_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            if (cbbChonBan.SelectedValue==null)
             {
-                //MessageBox.Show(dataGridView1.Rows[i].Value.ToString());
+                MessageBox.Show("Chưa chọn bàn");
+                
             }
+            else
+            {
+                string value = "-------------DANH SÁCH ORDER-------------\n";
+                try
+                {
+                    value = "Bàn:" + cbbChonBan.SelectedItem.ToString() + "\nMón ăn          Số lượng\n";
+                }
+                catch { }
+                for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                {
+                    try
+                    {
+                        value = value + dataGridView1.Rows[i].Cells[0].Value.ToString() + "          " + dataGridView1.Rows[i].Cells[1].Value.ToString() + "\n";
+                    }
+                    catch { }
+                }
+                MessageBox.Show(value);
+            }
+            
         }
     }
 }
