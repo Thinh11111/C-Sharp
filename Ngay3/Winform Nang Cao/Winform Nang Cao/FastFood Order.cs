@@ -45,21 +45,25 @@ namespace Winform_Nang_Cao
         public void KT_ThemVaoDGV(string tenMonAn)
         {
             int flag = 0;
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            try
             {
-                //chặn lỗi khi so sánh với dòng cuối cùng của DataGridView
-                try
+                for (int i = 0; i < dataGridView1.Rows.Count; i++)
                 {
+                    //chặn lỗi khi so sánh với dòng cuối cùng của DataGridView
+
+
                     //so sanh vứi tên món ăn
                     if (dataGridView1.Rows[i].Cells[0].Value.ToString() == tenMonAn)
                     {
                         dataGridView1.Rows[i].Cells[1].Value = Convert.ToInt32(dataGridView1.Rows[i].Cells[1].Value) + 1;
                         flag = 1;
-                        break;
+                        //break;
                     }
+
+
                 }
-                catch { }
             }
+            catch { }
             if (flag == 0)
             {
                 DataTable dt = new DataTable();
@@ -70,7 +74,7 @@ namespace Winform_Nang_Cao
                 r["Món ăn"] = tenMonAn;
                 r["Số lượng"] = 1;
                 dt.Rows.Add(r);
-                dt.AcceptChanges();
+                //dt.AcceptChanges();
                 dataGridView1.DataSource = dt;
             }
 
@@ -149,17 +153,16 @@ namespace Winform_Nang_Cao
         }
         private void btnOrder_Click(object sender, EventArgs e)
         {
-            if (cbbChonBan.SelectedValue==null)
+            if (cbbChonBan.SelectedItem == null)
             {
                 MessageBox.Show("Chưa chọn bàn");
-                
             }
             else
             {
-                string value = "-------------DANH SÁCH ORDER-------------\n";
+                string value = "";
                 try
                 {
-                    value = "Bàn:" + cbbChonBan.SelectedItem.ToString() + "\nMón ăn          Số lượng\n";
+                    value = "-------------DANH SÁCH ORDER-------------\n" + "Bàn:" + cbbChonBan.SelectedItem.ToString() + "\nMón ăn          Số lượng\n";
                 }
                 catch { }
                 for (int i = 0; i < dataGridView1.Rows.Count; i++)
@@ -172,7 +175,7 @@ namespace Winform_Nang_Cao
                 }
                 MessageBox.Show(value);
             }
-            
+
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
