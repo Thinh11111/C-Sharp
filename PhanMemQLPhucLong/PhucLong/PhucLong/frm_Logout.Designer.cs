@@ -1,6 +1,6 @@
 ﻿namespace PhucLong
 {
-    partial class Form1
+    partial class frm_Logout
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // frm_Logout
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(961, 508);
+            this.Name = "frm_Logout";
+            this.Text = "frm_Logout";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
     }
 }
-

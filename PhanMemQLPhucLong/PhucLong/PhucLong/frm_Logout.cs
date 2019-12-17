@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PhucLong
 {
-    public partial class Form1 : Form
+    public partial class frm_Logout : Form
     {
-        public Form1()
+        public frm_Logout()
         {
             InitializeComponent();
         }
