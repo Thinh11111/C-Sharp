@@ -34,8 +34,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -68,11 +71,13 @@
     <Compile Include="frm_Login.Designer.cs">
       <DependentUpon>frm_Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Logout.cs">
+    <Compile Include="..\..\..\..\frm_Logout.cs">
       <SubType>Form</SubType>
+      <Link>frm_Logout.cs</Link>
     </Compile>
-    <Compile Include="frm_Logout.Designer.cs">
+    <Compile Include="..\..\..\..\frm_Logout.Designer.cs">
       <DependentUpon>frm_Logout.cs</DependentUpon>
+      <Link>frm_Logout.Designer.cs</Link>
     </Compile>
     <Compile Include="frm_MainStaff1.cs">
       <SubType>Form</SubType>
@@ -83,11 +88,18 @@
     <Compile Include="LayDuLieu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frm_Login.resx">
       <DependentUpon>frm_Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Logout.resx">
+    <EmbeddedResource Include="..\..\..\..\frm_Logout.resx">
       <DependentUpon>frm_Logout.cs</DependentUpon>
+      <Link>frm_Logout.resx</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_MainStaff1.resx">
       <DependentUpon>frm_MainStaff1.cs</DependentUpon>
@@ -102,6 +114,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+<<<<<<< HEAD
     <None Include="BANHANGDataSet.xsc">
       <DependentUpon>BANHANGDataSet.xsd</DependentUpon>
     </None>
@@ -135,6 +148,11 @@
     <None Include="BANHANGDataSet2.xss">
       <DependentUpon>BANHANGDataSet2.xsd</DependentUpon>
     </None>
+=======
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> 2f18d65e4d3e1b6f8d1c3792c8c9a7efd3bb22cf
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -147,6 +165,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoPhucLong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_cup_5404318.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_44-web_essential_3401862.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_bar_chart_172571.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_glyph-20_3403739.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_shopping-cart_216477.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Streamline-79_185099.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beveragecoffee-14102457284n8gk.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

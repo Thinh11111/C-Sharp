@@ -36,6 +36,7 @@
             this.btn_Login = new System.Windows.Forms.Button();
             this.rdo_Admin = new System.Windows.Forms.RadioButton();
             this.rdo_Staff = new System.Windows.Forms.RadioButton();
+            this.check_ShowPass = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // txtUserName
@@ -115,11 +116,23 @@
             this.rdo_Staff.Text = "Staff";
             this.rdo_Staff.UseVisualStyleBackColor = true;
             // 
+            // check_ShowPass
+            // 
+            this.check_ShowPass.AutoSize = true;
+            this.check_ShowPass.Location = new System.Drawing.Point(344, 153);
+            this.check_ShowPass.Name = "check_ShowPass";
+            this.check_ShowPass.Size = new System.Drawing.Size(79, 17);
+            this.check_ShowPass.TabIndex = 8;
+            this.check_ShowPass.Text = "Show Pass";
+            this.check_ShowPass.UseVisualStyleBackColor = true;
+            this.check_ShowPass.CheckedChanged += new System.EventHandler(this.check_ShowPass_CheckedChanged);
+            // 
             // frm_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(455, 336);
+            this.Controls.Add(this.check_ShowPass);
             this.Controls.Add(this.rdo_Staff);
             this.Controls.Add(this.rdo_Admin);
             this.Controls.Add(this.btn_Login);
@@ -145,6 +158,7 @@
         private System.Windows.Forms.Button btn_Login;
         private System.Windows.Forms.RadioButton rdo_Admin;
         private System.Windows.Forms.RadioButton rdo_Staff;
+        private System.Windows.Forms.CheckBox check_ShowPass;
     }
 }
 
