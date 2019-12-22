@@ -85,7 +85,7 @@
             // 
             // btn_Login
             // 
-            this.btn_Login.Location = new System.Drawing.Point(344, 269);
+            this.btn_Login.Location = new System.Drawing.Point(187, 262);
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.Size = new System.Drawing.Size(75, 23);
             this.btn_Login.TabIndex = 5;
@@ -96,7 +96,7 @@
             // rdo_Admin
             // 
             this.rdo_Admin.AutoSize = true;
-            this.rdo_Admin.Location = new System.Drawing.Point(211, 216);
+            this.rdo_Admin.Location = new System.Drawing.Point(187, 216);
             this.rdo_Admin.Name = "rdo_Admin";
             this.rdo_Admin.Size = new System.Drawing.Size(54, 17);
             this.rdo_Admin.TabIndex = 6;
@@ -107,7 +107,7 @@
             // rdo_Staff
             // 
             this.rdo_Staff.AutoSize = true;
-            this.rdo_Staff.Location = new System.Drawing.Point(320, 216);
+            this.rdo_Staff.Location = new System.Drawing.Point(285, 216);
             this.rdo_Staff.Name = "rdo_Staff";
             this.rdo_Staff.Size = new System.Drawing.Size(47, 17);
             this.rdo_Staff.TabIndex = 7;

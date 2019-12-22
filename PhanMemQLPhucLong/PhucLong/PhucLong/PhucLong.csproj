@@ -47,6 +47,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BANHANGDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BANHANGDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BANHANGDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BANHANGDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BANHANGDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BANHANGDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +74,13 @@
     <Compile Include="frm_Logout.Designer.cs">
       <DependentUpon>frm_Logout.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_MainStaff1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MainStaff1.Designer.cs">
+      <DependentUpon>frm_MainStaff1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LayDuLieu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frm_Login.resx">
@@ -66,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Logout.resx">
       <DependentUpon>frm_Logout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MainStaff1.resx">
+      <DependentUpon>frm_MainStaff1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -77,6 +102,39 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="BANHANGDataSet.xsc">
+      <DependentUpon>BANHANGDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BANHANGDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BANHANGDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BANHANGDataSet.xss">
+      <DependentUpon>BANHANGDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BANHANGDataSet1.xsc">
+      <DependentUpon>BANHANGDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BANHANGDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BANHANGDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BANHANGDataSet1.xss">
+      <DependentUpon>BANHANGDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BANHANGDataSet2.xsc">
+      <DependentUpon>BANHANGDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BANHANGDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BANHANGDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BANHANGDataSet2.xss">
+      <DependentUpon>BANHANGDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
