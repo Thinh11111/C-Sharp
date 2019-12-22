@@ -19,11 +19,24 @@ namespace PhucLong
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Xin Chao Admin","Thong Bao");
             frm_Logout f = new frm_Logout();
             this.Hide();
             f.ShowDialog();
             this.Show();
           
+        }
+
+        private void check_ShowPass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (check_ShowPass.Checked)
+            {
+                txtPassWord.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                 txtPassWord.UseSystemPasswordChar = true;
+            }
         }
     }
 }
